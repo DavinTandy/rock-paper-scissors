@@ -1,0 +1,69 @@
+body {
+    background-color: #EEEEEE;
+    margin: 0;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.header {
+    background-color: #6FB2D2;
+    color: #EEEEEE;
+    font-weight: bolder;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    margin: 16px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 16px;
+}
+
+.card {
+    background-color: #6FB2D2;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 25px 15px;
+    transition: 0.3s;
+    border-radius: 10px;
+    font-size: 3em;
+    border-style: none;
+}
+
+.player-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+    opacity: 0.9;
+}
+
+.points {
+    text-align: center;
+    margin: 24px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #85C88A;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.result {
+    margin: 32px;
+}
+
+.arena {
+    display: flex;
+    justify-content: space-evenly;
+}

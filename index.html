@@ -8,35 +8,45 @@
 </head>
 <body>
     <div class="header">
-        <p>Rock Paper Scissors</p>
+        <p class="title">Rock Paper Scissors</p>
     </div>
     <div class="computer">
         <p>Computer</p>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <p>🎴</p>
-        <p>🎴</p>
-        <p>🎴</p>
+        <div class="points">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="cards">
+            <button class="card">🎴</button>
+            <button class="card">🎴</button>
+            <button class="card">🎴</button>
+        </div>
     </div>
-    <div class="arena">
-        <p>✊/✋/✌️</p>
+    <div class="result">
         <p>You win/You lose</p>
-        <p>Rock/Paper/Scissors vs Rock/Paper/Scissors</p>
-        <p>✊/✋/✌️</p>
+        <div class="arena">
+            <p>Rock/Paper/Scissors</p>
+            <p>vs</p>
+            <p>Rock/Paper/Scissors</p>
+        </div>
     </div>
     <div class="player">
         <p>Player</p>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <p>✊</p>
-        <p>✋</p>
-        <p>✌️</p>
+        <div class="points">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="cards">
+            <button class="card player-card">✊</button>
+            <button class="card player-card">✋</button>
+            <button class="card player-card">✌️</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
