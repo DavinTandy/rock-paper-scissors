@@ -15,3 +15,13 @@ function getPlayerChoice() {
         }
     }
 }
+
+function playRound(computerChoice, playerChoice) {
+    if (computerChoice === "Rock" && playerChoice === "Paper" || computerChoice === "Paper" && playerChoice === "Scissors" || computerChoice === "Scissors" && playerChoice === "Rock") {
+        document.getElementById("result").innerText = "You win";
+    } else if (computerChoice === "Rock" && playerChoice === "Scissors" || computerChoice === "Paper" && playerChoice === "Rock" || computerChoice === "Scissors" && playerChoice === "Paper") {
+        document.getElementById("result").innerText = "Computer win";
+    } else {
+        document.getElementById("result").innerText = "Draw";
+    }
+}

@@ -8,13 +8,14 @@
     </head>
     <body>
         <form>
-            <input type="radio" id="rock" name="choice" value="Rock" onclick="getPlayerChoice()">
+            <input type="radio" id="rock" name="choice" value="Rock" onclick="playRound(getComputerChoice(), getPlayerChoice())">
             <label for="rock">Rock</label>
-            <input type="radio" id="paper" name="choice" value="Paper" onclick="getPlayerChoice()">
+            <input type="radio" id="paper" name="choice" value="Paper" onclick="playRound(getComputerChoice(), getPlayerChoice())">
             <label for="paper">Paper</label>
-            <input type="radio" id="scissors" name="choice" value="Scissors" onclick="getPlayerChoice()">
+            <input type="radio" id="scissors" name="choice" value="Scissors" onclick="playRound(getComputerChoice(), getPlayerChoice())">
             <label for="scissors">Scissors</label>
         </form>
+        <p id="result"></p>
         <script src="js/script.js"></script>
     </body>
 </html>
