@@ -1,6 +1,9 @@
 const choices = ["Rock", "Paper", "Scissors"];
 let playerScore = 0;
 let computerScore = 0;
+const rock = document.getElementById("rock");
+const paper = document.getElementById("paper");
+const scissors = document.getElementById("scissors");
 
 function getComputerChoice() {
     const computerChoice = choices[Math.floor(Math.random() * 3)];
@@ -16,6 +19,7 @@ function getPlayerChoice() {
             return playerChoice;
         }
     }
+    return "";
 }
 
 function playRound(computerChoice, playerChoice) {
@@ -42,3 +46,13 @@ function gameReset() {
     playerScore = 0;
     computerScore = 0;
 }
+
+function play() {
+    const computerChoice = getComputerChoice();
+    const playerChoice = getPlayerChoice();
+    playRound(computerChoice, playerChoice);
+}
+
+rock.addEventListener("click", play)
+paper.addEventListener("click", play)
+scissors.addEventListener("click", play)
