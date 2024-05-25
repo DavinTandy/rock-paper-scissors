@@ -19,6 +19,7 @@ function getPlayerChoice() {
             return playerChoice;
         }
     }
+
     return "";
 }
 
@@ -33,6 +34,7 @@ function playRound(computerChoice, playerChoice) {
         document.getElementById("result").innerText = "Draw";
     }
 
+    document.getElementById("computer-choice").innerText = "Computer choose " + computerChoice;
     document.getElementById("player-score").innerText = "Player Score: " + playerScore;
     document.getElementById("computer-score").innerText = "Computer Score: " + computerScore;
     
