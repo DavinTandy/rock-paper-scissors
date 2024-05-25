@@ -22,12 +22,23 @@ function playRound(computerChoice, playerChoice) {
     if (computerChoice === "Rock" && playerChoice === "Paper" || computerChoice === "Paper" && playerChoice === "Scissors" || computerChoice === "Scissors" && playerChoice === "Rock") {
         document.getElementById("result").innerText = "You win";
         playerScore += 1;
-        document.getElementById("player-score").innerText = "Player Score: " + playerScore;
     } else if (computerChoice === "Rock" && playerChoice === "Scissors" || computerChoice === "Paper" && playerChoice === "Rock" || computerChoice === "Scissors" && playerChoice === "Paper") {
         document.getElementById("result").innerText = "Computer win";
         computerScore += 1;
-        document.getElementById("computer-score").innerText = "Computer Score: " + computerScore;
     } else {
         document.getElementById("result").innerText = "Draw";
     }
+
+    document.getElementById("player-score").innerText = "Player Score: " + playerScore;
+    document.getElementById("computer-score").innerText = "Computer Score: " + computerScore;
+    
+    if (playerScore >= 5 || computerScore >= 5) {
+        document.getElementById("result").innerText += ". Game over. Game resetting..."
+        gameReset();
+    }
+}
+
+function gameReset() {
+    playerScore = 0;
+    computerScore = 0;
 }
