@@ -34,7 +34,25 @@ function playRound(computerChoice, playerChoice) {
         document.getElementById("result").innerText = "Draw";
     }
 
+    if (computerChoice === "Rock") {
+        document.getElementById("computer-rock").style.opacity = 1;
+        document.getElementById("computer-paper").style.opacity = 0.5;
+        document.getElementById("computer-scissors").style.opacity = 0.5;
+    } else if (computerChoice === "Paper") {
+        document.getElementById("computer-rock").style.opacity = 0.5;
+        document.getElementById("computer-paper").style.opacity = 1;
+        document.getElementById("computer-scissors").style.opacity = 0.5;
+    } else if (computerChoice === "Scissors") {
+        document.getElementById("computer-rock").style.opacity = 0.5;
+        document.getElementById("computer-paper").style.opacity = 0.5;
+        document.getElementById("computer-scissors").style.opacity = 1;
+    }
+
+    document.getElementById("result").style.visibility = "visible";
+    document.getElementById("player-choice").innerText = "You choose " + playerChoice;
+    document.getElementById("player-choice").style.visibility = "visible";
     document.getElementById("computer-choice").innerText = "Computer choose " + computerChoice;
+    document.getElementById("computer-choice").style.visibility = "visible";
     document.getElementById("player-score").innerText = "Player Score: " + playerScore;
     document.getElementById("computer-score").innerText = "Computer Score: " + computerScore;
     

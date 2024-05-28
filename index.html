@@ -7,19 +7,33 @@
         <title>Rock Paper Scissors</title>
     </head>
     <body>
-        <form>
-            <input type="radio" id="rock" name="choice" value="Rock">
-            <label for="rock">Rock</label>
-            <input type="radio" id="paper" name="choice" value="Paper">
-            <label for="paper">Paper</label>
-            <input type="radio" id="scissors" name="choice" value="Scissors">
-            <label for="scissors">Scissors</label>
-        </form>
-        
-        <p id="computer-choice"></p>
-        <p id="result"></p>
-        <p id="player-score">Player Score: 0</p>
-        <p id="computer-score">Computer Score: 0</p>
+        <main>
+            <h1 id="title-label">Rock Paper Scissors</h1>
+            <h2 id="player-title">Player Choice</h2>
+            <form>
+                <input type="radio" id="rock" class="player-radio" name="choice" value="Rock">
+                <label for="rock" class="player-choices" id="player-rock">✊</label>
+                <input type="radio" id="paper" class="player-radio" name="choice" value="Paper">
+                <label for="paper" class="player-choices" id="player-paper">✋</label>
+                <input type="radio" id="scissors" class="player-radio" name="choice" value="Scissors">
+                <label for="scissors" class="player-choices" id="player-scissors">✌️</label>
+            </form>
+            <p id="player-choice">You choose</p>
+
+            <h2 id="computer-title">Computer Choice</h2>
+            <div id="computer-choices">
+                <p class="computer-label" id="computer-rock">✊</p>
+                <p class="computer-label" id="computer-paper">✋</p>
+                <p class="computer-label" id="computer-scissors">✌️</p>
+            </div>
+            <p id="computer-choice">Computer choose</p>
+
+            <p id="result">Draw</p>
+            <div id="score">
+                <p id="player-score">Player Score: 0</p>
+                <p id="computer-score">Computer Score: 0</p>
+            </div>
+        </main>
 
         <script src="js/script.js"></script>
     </body>

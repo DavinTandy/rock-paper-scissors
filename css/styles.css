@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #EBE9E1;
+    color: #2C3531;
+}
+
+#title-label {
+    text-align: center;
+}
+
+#player-title {
+    text-align: center;
+}
+
+.player-radio {
+    display: none;
+}
+
+form:has(#player-rock:hover) #player-paper {
+    opacity: 50%;
+}
+
+form:has(#player-rock:hover) #player-scissors {
+    opacity: 50%;
+}
+
+form:has(#player-paper:hover) #player-rock {
+    opacity: 50%;
+}
+
+form:has(#player-paper:hover) #player-scissors {
+    opacity: 50%;
+}
+
+form:has(#player-scissors:hover) #player-rock {
+    opacity: 50%;
+}
+
+form:has(#player-scissors:hover) #player-paper {
+    opacity: 50%;
+}
+
+.player-choices {
+    font-size: 100px;
+}
+
+#player-choice {
+    font-size: 18px;
+    text-align: center;
+    visibility: hidden;
+}
+
+#computer-title {
+    text-align: center;
+}
+
+#computer-choices {
+    display: flex;
+}
+
+.computer-label {
+    font-size: 100px;
+    margin: 0;
+}
+
+#computer-choice {
+    font-size: 18px;
+    text-align: center;
+    visibility: hidden;
+}
+
+#result {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    visibility: hidden;
+}
+
+#score {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#player-score {
+    margin: 0;
+}
+
+#computer-score {
+    margin: 0;
+}
