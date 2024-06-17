@@ -77,16 +77,16 @@ form:has(#player-scissors:hover) #player-paper {
     visibility: hidden;
 }
 
-#score {
+#heart {
     font-size: 18px;
     display: flex;
     justify-content: space-between;
 }
 
-#player-score {
+#player-heart {
     margin: 0;
 }
 
-#computer-score {
+#computer-heart {
     margin: 0;
 }
